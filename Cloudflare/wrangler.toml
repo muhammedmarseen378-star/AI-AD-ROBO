@@ -1,0 +1,18 @@
+name = "advertising-robot"
+main = "Workers/src/index.js"
+compatibility_date = "2026-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ENVIRONMENT = "production"
+TIMEZONE = "Asia/Kolkata"
+DEFAULT_GROK_MODEL = "llama-3.3-70b-versatile"
+ADMIN_EMAIL = "nttf.ttc.m3b.group1.project@gmail.com"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ai_ad_robot_db"
+database_id = "ai_ad_robot_db"
+
+[triggers]
+crons = ["* * * * *"]

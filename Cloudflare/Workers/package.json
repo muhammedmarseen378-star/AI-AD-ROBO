@@ -1,0 +1,24 @@
+{
+  "name": "advertising-robot",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Cloudflare Worker Backend for AI Advertisement Robot with D1, R2, and Groq AI Integration",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:migrate": "wrangler d1 migrations apply ai_ad_robot_db --remote",
+    "db:seed": "wrangler d1 execute ai_ad_robot_db --file=../D1_Database/seed.sql"
+  },
+  "keywords": [
+    "cloudflare-worker",
+    "d1",
+    "r2",
+    "esp32-s3",
+    "grok-ai",
+    "mechatronics",
+    "robotics"
+  ],
+  "author": "NTTF TTC Mechatronics Final Year Group 1",
+  "license": "MIT"
+}
